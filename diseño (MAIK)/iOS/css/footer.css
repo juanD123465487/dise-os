@@ -1,0 +1,49 @@
+/* Footer Styles */
+.site-footer {
+    background-color: #ffffff; /* Color de fondo */
+    padding: 20px 50px;
+    border-top: 1px solid #eee; /* Línea opcional arriba del footer */
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.copyright {
+    color: #666;
+    font-size: 14px;
+}
+
+.footer-images {
+    display: flex;
+    gap: 15px; /* Espacio entre imágenes */
+}
+
+.footer-images img {
+    width: 30px; /* Tamaño pequeño para las imágenes */
+    height: auto;
+    opacity: 0.7; /* Efecto semitransparente (opcional) */
+    transition: opacity 0.3s;
+}
+
+.footer-images img:hover {
+    opacity: 1; /* Efecto al pasar el mouse */
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .footer-images {
+        justify-content: center;
+    }
+}

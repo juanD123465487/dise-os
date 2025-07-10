@@ -1,0 +1,73 @@
+/* Products Section */
+.products {
+    padding: 60px 50px;
+    background-color: #ffffff; /* Fondo gris claro (ajusta según tu diseño) */
+    text-align: center;
+}
+
+.text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px; /* Espacio entre icono y texto */
+    margin-bottom: 40px;
+    margin-right: 72%;
+}
+
+.title-icon {
+    width: 30px; /* Tamaño de la imagen pequeña */
+    height: auto;
+}
+
+.text h3 {
+    color: #333;
+    font-size: 28px;
+    margin: 0; /* Elimina margen predeterminado */
+}
+
+.product-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap; /* Para responsive */
+    gap: 100px; /* Espacio entre imágenes */
+}
+
+.product-image {
+    width: 250px; /* Ajusta el tamaño */
+    height: auto;
+    border: 1px solid #ddd; /* Borde sutil */
+    border-radius: 8px;
+    padding: 10px; /* Espacio interno */
+    background-color: white; /* Fondo blanco para el "margen resaltado" */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar */
+    transition: transform 0.3s;
+}
+
+.product-image:hover {
+    transform: translateY(-5px); /* Efecto hover */
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 1024px) {
+    .text {
+        margin-right: 0;
+        justify-content: center;
+    }
+    
+    .product-gallery {
+        gap: 30px;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-image {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+
+@media (max-width: 480px) {
+    .product-image {
+        width: 100%;
+    }
+}

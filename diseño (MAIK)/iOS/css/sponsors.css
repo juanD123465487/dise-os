@@ -1,0 +1,34 @@
+.sponsors {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background: #ecf0f1;
+    gap: 18px;
+}
+
+.sponsors img {
+    margin-left: 150px;
+    margin-right: 5%;
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 1024px) {
+    .sponsors {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 30px;
+        padding: 30px 20px;
+    }
+    
+    .sponsors img {
+        margin: 0;
+        max-width: 120px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .sponsors img {
+        max-width: 80px;
+    }
+}

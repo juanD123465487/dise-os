@@ -1,0 +1,89 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Barra de navegación */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background-color: #4a5864; /* Nuevo color de fondo */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra suave como en la imagen */
+}
+
+/* Logo */
+.logo img {
+    height: 40px; /* Ajusta según el tamaño de tu imagen */
+    margin-left: 50%;
+}
+
+/* Botones de navegación */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 30px; /* Espacio entre botones */
+    margin-right: 5%;  
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #e7e7e7; /* Color de texto */
+    font-weight: bold;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #007BFF; /* Color azul al pasar el mouse (como en la imagen) */
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 1024px) {
+    .navbar {
+        padding: 15px 20px;
+        flex-wrap: wrap;
+    }
+    
+    .logo img {
+        margin-left: 0;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        position: relative;
+    }
+    
+    .nav-links {
+        display: none;
+        width: 100%;
+        flex-direction: column;
+        background: #3a4a56;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        padding: 20px;
+        z-index: 1000;
+    }
+    
+    .nav-links.active {
+        display: flex;
+    }
+    
+    .hamburger-btn {
+        display: block;
+        background: none;
+        border: none;
+        color: white;
+        font-size: 24px;
+        cursor: pointer;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+}

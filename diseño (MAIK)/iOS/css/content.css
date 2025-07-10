@@ -1,0 +1,76 @@
+/* Content Section */
+.content {
+    padding: 60px 50px;
+    background-color: white; /* Fondo blanco  */
+    text-align: center;
+}
+
+.image-row {
+    display: flex;
+    justify-content: center;
+    gap: 270px; /* Espacio entre imágenes */
+    margin-bottom: 40px;
+}
+
+.image-row img {
+    max-width: 200px; /* Ajusta el tamaño de las imágenes */
+    height: auto;
+    border-radius: 8px; /*bordes redondeados */
+}
+
+.text-row {
+    display: flex;
+    justify-content: center;
+    gap: 150px; /* Mismo espacio que las imágenes */
+}
+
+.text-item {
+    max-width: 260px; /* Ancho fijo para cada columna de texto */
+}
+
+.text-item h3 {
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.text-item p {
+    color: #666;
+    margin-bottom: 20px;
+    line-height: 1.5;
+}
+
+.btn-read-more {
+    display: inline-block;
+    background-color: #007BFF; /* Azul como en los botones anteriores */
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.btn-read-more:hover {
+    background-color: #0056b3;
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 1024px) {
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .text-row {
+        flex-direction: column;
+        align-items: center;
+        gap: 40px;
+    }
+    
+    .text-item {
+        max-width: 100%;
+        text-align: center;
+    }
+}

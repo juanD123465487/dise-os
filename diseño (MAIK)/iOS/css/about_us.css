@@ -1,0 +1,116 @@
+/* About Us Section */
+.about-us {
+    padding: 60px 50px;
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Side Styles */
+.left-side {
+    width: 48%;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.section-icon {
+    width: 30px;
+    height: auto;
+}
+
+.blog-post {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.blog-image img {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.blog-content h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.read-more {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.date {
+    color: #666;
+    font-size: 14px;
+    margin-top: 10px;
+}
+
+.older-entries {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Right Side Styles */
+.right-side {
+    width: 48%;
+}
+
+.twitter-post {
+    margin-bottom: 25px;
+    padding-bottom: 25px;
+    border-bottom: 1px solid #eee;
+}
+
+.twitter-handle {
+    font-weight: bold;
+}
+
+.blue-link {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.follow-twitter {
+    display: inline-block;
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Agrega al final del archivo */
+@media (max-width: 1024px) {
+    .container {
+        flex-direction: column;
+        gap: 50px;
+    }
+    
+    .left-side,
+    .right-side {
+        width: 100%;
+    }
+    
+    .blog-post {
+        flex-direction: column;
+    }
+    
+    .blog-image img {
+        width: 100%;
+        max-width: 400px;
+        margin-bottom: 20px;
+    }
+}
